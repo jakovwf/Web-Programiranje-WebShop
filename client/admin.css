@@ -1,0 +1,30 @@
+body{
+    background-color: aqua;
+    justify-items: center;
+}
+
+
+select{
+    width: 200px;
+}
+
+.adminPanel{
+    display: flex;
+    flex-direction: column;
+}
+
+.dugme{
+    margin-top: 20px;
+    height: 20px;
+
+}
+
+.optionPanel{
+    margin-top: 100px;
+    height: 400px;
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

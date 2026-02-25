@@ -3,7 +3,7 @@ export class LoginPage{
         this.kontejner = null;
     }   
 
-    crtaj(){
+    crtaj(page){
         this.kontejner = document.createElement('div');
         this.kontejner.className = 'login';
         document.body.appendChild(this.kontejner);
@@ -43,7 +43,7 @@ export class LoginPage{
                 if(response.ok){
                     const korisnik = await response.json();
                     localStorage.setItem("UlogovaniKorisnik", JSON.stringify(korisnik));
-                    window.location.href="index.html";
+                    window.location.href=`${page}.html`;
                     
                     alert("Uspesno si prijavljen");
 

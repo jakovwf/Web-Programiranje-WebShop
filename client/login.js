@@ -1,4 +1,4 @@
 import { LoginPage } from "./loginClass.js";
 
 const login = new LoginPage();
-login.crtaj();
+login.crtaj("index");
