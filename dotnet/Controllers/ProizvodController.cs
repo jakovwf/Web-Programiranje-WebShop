@@ -37,7 +37,7 @@ namespace WebTemplate.Controllers
         }
 
         [HttpPost("unesiNoviProizvod")]
-        public async Task<IActionResult> unesiProizvod([FromBody] Proizvod novi)
+        public async Task<IActionResult> unesiProizvod(Proizvod novi)
         {
             if (novi == null)
             {
