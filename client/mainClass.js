@@ -7,12 +7,13 @@ export class MainClass {
        await this.vratiSveProizvode();
 
         this.container = document.querySelector(".mainDiv");
-        const podnaslov = document.createElement("h2");
-        podnaslov.classList.add("Naslov");
-        podnaslov.innerText = "Proizvodi";
-        this.container.appendChild(podnaslov);
+        
 
         this.proizvodi.forEach(p =>{
+            const proizvodLink = document.createElement("a");
+            
+
+
             const prDiv = document.createElement('div');
             prDiv.classList.add("kartica");
             this.container.appendChild(prDiv);
