@@ -38,7 +38,7 @@ namespace WebTemplate.Controllers
             {
                 email=email,
             };
-            return Ok(bezbednoZaFront);
+            return Ok();
         }
     }
 }
